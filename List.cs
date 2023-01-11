@@ -10,10 +10,16 @@ public class List
         name = nameList;
         firstNode = lastNode = null;
     }
-
+    /*
+    **  this
+    **  (overloading constrctors)
+    **  To avoid code duplication, one constructor can call another, using the "this" keyword.
+    **  In the next constructor, "this" calls to previous constructor.
+    **  
+    */
     public List() : this("list")
     {
-        // this method build an empty list with "list"
+        // this method build an empty list calling to public List(string nameList)
     }
 
     //methods
